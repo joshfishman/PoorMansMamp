@@ -1,4 +1,4 @@
-# Poor Mans MAMP
+[![Poor Man's MAMP Logo](https://threenine.co.uk/wp-content/uploads/2016/08/poormansmamp.png)](https://threenine.co.uk/setting-php7-development-mac-osx/)
 
 A quick easy way to create PHP development environment on MAC. 
 
