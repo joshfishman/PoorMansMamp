@@ -45,6 +45,15 @@ The shell will prompt for a directory name and your username (name of your home 
 
 The directory name can be anything you like, we recommend calling Sites.
 
+## Install PHPmyAdmin
+
+	$ curl -O https://files.phpmyadmin.net/phpMyAdmin/4.6.3/phpMyAdmin-4.6.3-all-languages.zip
+	$ unzip phpMyAdmin-4.6.3-all-languages.zip
+	$ mv phpMyAdmin-4.6.3-all-languages phpmyadmin
+	$ mv phpmyadmin ~/Sites/
+	$ rm phpMyAdmin-4.6.3-all-languages.zip
+
+
 Once script has finished restart apache
 
 	$ sudo apachectl -k restart
