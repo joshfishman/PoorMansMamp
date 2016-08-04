@@ -36,6 +36,7 @@ $devtools = array(
 //	array( 'name' => 'Tool', 'url' => 'http://example.com/' ),
 	array( 'name' => 'Home', 'url' => 'http://localhost' , 'target' => '_self'),
 	array( 'name' => 'Github', 'url' => 'http://github.com/threenine' , 'target' => '_blank'),
+	array( 'name' => 'Project Portal', 'url' => 'http://internal.threenine.co.uk/project/', 'target' => '_blank')
 	);
 
 /*
