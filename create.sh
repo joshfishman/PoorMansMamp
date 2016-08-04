@@ -1,4 +1,5 @@
 #!/bin/sh 
+
 read -p "Enter Directory Name: " dirname
 read -p "Enter  Username: " username
 CWD="$(pwd)"

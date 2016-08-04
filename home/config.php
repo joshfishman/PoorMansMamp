@@ -13,7 +13,7 @@
 
 
 /** directory name(s) */
-$dir = array("%%ROOTFOLDER%%/project/*");
+$dir = array("%%ROOTFOLDER%%/projects/*");
 					
 /** Your local top level domain */
 $tld = 'dev';
