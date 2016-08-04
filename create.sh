@@ -61,6 +61,16 @@ sudo cp -af $apachedirectory /private/etc
 echo "Delete src apache2 directory"
 rm -rf $apachedirectory
 
+echo "Installing phpmyadmin"
+curl -O https://files.phpmyadmin.net/phpMyAdmin/4.6.3/phpMyAdmin-4.6.3-all-languages.zip
+unzip phpMyAdmin-4.6.3-all-languages.zip
+mv phpMyAdmin-4.6.3-all-languages phpmyadmin
+mv phpmyadmin ~/Sites/
+rm phpMyAdmin-4.6.3-all-languages.zip
+
+echo "Restarting apache"
+sudo apachectl -k restart
+
 echo "File will now self destruct"
 rm -f ~/create.sh
 
