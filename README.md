@@ -7,7 +7,7 @@ This is supplemented by our post [Setting up PHP7 Development Evironment on MAC]
 
 
 
-## Prerequisites
+## Pre-requisites
 
 ### PHP
 
@@ -54,5 +54,10 @@ Navigate to http://localhost , your new Development Home Page will be viewed.
 
 # Using
 
+To create a new project simply navigate to your chosen directory i.e. Sites, and open the projects directory , create a new folder with the name of your new project i.e. fancynewproject
+
+Add your new php files ensuring you add a new index.php 
+
+You can then just navigate in your browser to http://fancynewproject.dev  your new site will be displayed.
 
 
