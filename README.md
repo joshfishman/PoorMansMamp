@@ -47,6 +47,8 @@ The directory name can be anything you like, we recommend calling Sites.
 
 ## Install PHPmyAdmin
 
+	Installation of phpmyadmin is now included in the create.sh.  This is just left here for reference should it be required
+
 	$ curl -O https://files.phpmyadmin.net/phpMyAdmin/4.6.3/phpMyAdmin-4.6.3-all-languages.zip
 	$ unzip phpMyAdmin-4.6.3-all-languages.zip
 	$ mv phpMyAdmin-4.6.3-all-languages phpmyadmin
