@@ -9,7 +9,7 @@ This is supplemented by our post [Setting up PHP7 Development Evironment on MAC]
 
 ## Prerequisites
 
-	### PHP
+### PHP
 
 		This set up is designed to work with PHP, Installing PHP via HomeBrew
 
@@ -18,11 +18,11 @@ This is supplemented by our post [Setting up PHP7 Development Evironment on MAC]
 			$ brew tap homebrew/homebrew-php
 			$ brew install php70
 
-	### dnsmasq
+### dnsmasq
 
-		Dnsmasq provides network infrastructure for small networks.  It used within POMAM to create friendly URLs for project folders. i.e. http://threenine.dev
+	Dnsmasq provides network infrastructure for small networks.  It used within POMAM to create friendly URLs for project folders. i.e. http://threenine.dev
 
-		dnsmasq is installed via HomeBrew
+	dnsmasq is installed via HomeBrew
 
 		$ brew install dnsmasq
         $ cd $(brew --prefix)
