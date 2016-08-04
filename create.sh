@@ -10,13 +10,11 @@ then
                 echo "Directory doesn't exist. Creating now"
                 mkdir $dirname
                 cd $dirname
-               
                 mkdir projects
 
         else
                 cd dirname
-                
-                mkdir project
+                mkdir projects
         fi
 fi
 
