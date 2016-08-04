@@ -35,10 +35,24 @@ This is supplemented by our post [Setting up PHP7 Development Evironment on MAC]
 
 # Set Up
 
-	Simply copy 3 files to your home directory :  create.sh, apache2 , home
+Simply copy 3 files to your home directory :  create.sh, apache2 , home
 
-	Open a terminal window 
+Open a terminal window and execute
 
 		$ bash create.sh
+
+The shell will prompt for a directory name and your username (name of your home folder).
+
+The directory name can be anything you like, we recommend calling Sites.
+
+Once script has finished restart apache
+
+	$ sudo apachectl -k restart
+
+
+Navigate to http://localhost , your new Development Home Page will be viewed.
+
+# Using
+
 
 
