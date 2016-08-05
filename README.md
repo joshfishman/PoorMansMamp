@@ -26,7 +26,8 @@ To install PHP via HomeBrew is quick and easy
 
 **dnsmasq** provides network infrastructure for small networks.  It used within POMAMA to create friendly URLs for project folders. i.e. http://threenine.dev
 
-dnsmasq is installed via HomeBrew
+Install dnsmasq via HomeBrew and configure it
+
 --
 		$ brew install dnsmasq
         $ cd $(brew --prefix)
@@ -37,6 +38,21 @@ dnsmasq is installed via HomeBrew
 		$ sudo mkdir /etc/resolver
 		$ sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/dev'
 ---
+
+### MYSQL
+
+Currently POMAMA only support mySQL 
+
+---
+	$ brew install mysql
+
+	# Start the mysql server
+	$ brew services start mysql
+
+	# Secure your mySQL Installation
+	$ mysql_secure_installation
+---
+
 # Set Up
 
 Simply copy 3 files to your home a.k.a root directory :  **create.sh, apache2 , home**
