@@ -16,7 +16,7 @@ Currnently POMAMA is configured to run only with PHP7 due in part that is what I
 Typically I install PHP on my mac using HomeBrew. If you don't currently use HomeBrew . Why?  [Install HomeBrew on Mac](http://garywoodfine.com/install-homebrew-mac/)
 
 To install PHP via HomeBrew is quick and easy
-```bash
+```shell
 			$ brew tap homebrew/dupes
 			$ brew tap homebrew/versions
 			$ brew tap homebrew/homebrew-php
@@ -28,7 +28,7 @@ To install PHP via HomeBrew is quick and easy
 
 Install dnsmasq via HomeBrew and configure it
 
---bash 
+```shell 
 		$ brew install dnsmasq
         $ cd $(brew --prefix)
         $ mkdir etc
@@ -43,16 +43,16 @@ Install dnsmasq via HomeBrew and configure it
 
 Currently POMAMA only support mySQL 
 
----bash
+```shell
 
 	$ brew install mysql
-	
+
 	# Start the mysql server
 	$ brew services start mysql
 
 	# Secure your mySQL Installation
 	$ mysql_secure_installation
----
+```
 
 # Set Up
 
@@ -62,9 +62,9 @@ Simply copy 3 files to your home a.k.a root directory :
 ..*home
 
 Open a terminal window and execute
----bash
+```shell
 		$ bash create.sh
----
+```
 
 The shell will prompt for a **Directory name:** 
 
