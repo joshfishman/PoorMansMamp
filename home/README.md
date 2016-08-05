@@ -1,6 +1,6 @@
 [![Poor Man's MAMP Logo](https://threenine.co.uk/wp-content/uploads/2016/08/poormansmamp.png)](https://threenine.co.uk/setting-php7-development-mac-osx/)
 
-# POMAMA Administrtaion Portal
+# POMAMA Administration Portal
 
 Simple Homepage to manage the Poor Man's Mamp.
 
