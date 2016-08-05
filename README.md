@@ -44,8 +44,9 @@ Install dnsmasq via HomeBrew and configure it
 Currently POMAMA only support mySQL 
 
 ---bash
-	$ brew install mysql
 
+	$ brew install mysql
+	
 	# Start the mysql server
 	$ brew services start mysql
 
