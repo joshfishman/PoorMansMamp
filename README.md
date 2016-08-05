@@ -13,7 +13,7 @@ The inspiration to create this was a direct result from my post [Setting up PHP7
 
 Currnently POMAMA is configured to run only with PHP7 due in part that is what I primarily develop in at the moment. 
 
-Typically I install PHP on my mac using HomeBrew. If you don't currently use HomeBrew . Why?  [Install HomeBrew on Mac(http://garywoodfine.com/install-homebrew-mac/)]
+Typically I install PHP on my mac using HomeBrew. If you don't currently use HomeBrew . Why?  [Install HomeBrew on Mac](http://garywoodfine.com/install-homebrew-mac/)
 
 To install PHP via HomeBrew is quick and easy
 ---
@@ -46,9 +46,9 @@ Open a terminal window and execute
 		$ bash create.sh
 ---
 
-The shell will prompt for a ** Directory name:** 
+The shell will prompt for a **Directory name:** 
 
-** Directory Name **   Can be anything you like, however we recommend calling **Sites**
+**Directory Name**   Can be anything you like, however we recommend calling **Sites**
 
 
 You may be prompted to enter your Password for sudo access.  This is to copy the ammended apache2 configuration files over.
