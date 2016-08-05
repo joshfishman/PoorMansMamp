@@ -37,7 +37,7 @@ Install dnsmasq via HomeBrew and configure it
 		$ sudo launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
 		$ sudo mkdir /etc/resolver
 		$ sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/dev'
----
+```
 
 ### MYSQL
 
