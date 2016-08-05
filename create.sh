@@ -1,7 +1,7 @@
 #!/bin/sh 
 
 read -p "Enter Directory Name: " dirname
-read -p "Enter  Username: " username
+username=${PWD##*/}
 CWD="$(pwd)"
 if [[ ! -d "$dirname" ]]
 then

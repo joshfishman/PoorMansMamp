@@ -3,7 +3,7 @@
 
 A quick easy way to create PHP development environment on MAC. 
 
-This is supplemented by our post [Setting up PHP7 Development Evironment on MAC](https://threenine.co.uk/setting-php7-development-mac-osx/)
+The inspiration to create this was a direct result from my post [Setting up PHP7 Development Evironment on MAC](https://threenine.co.uk/setting-php7-development-mac-osx/) in which I was detailing the steps to setting up a PHP development environment on my mac.  There was so much twiddling with configuration files etc.  I just wanted an easier way, and being a software engineer I had the power to make it easy, so I did!
 
 
 
@@ -11,7 +11,11 @@ This is supplemented by our post [Setting up PHP7 Development Evironment on MAC]
 
 ### PHP
 
-This set up is designed to work with PHP, Installing PHP via HomeBrew
+Currnently POMAMA is configured to run only with PHP7 due in part that is what I primarily develop in at the moment. 
+
+Typically I install PHP on my mac using HomeBrew. If you don't currently use HomeBrew . Why?  [Install HomeBrew on Mac(http://garywoodfine.com/install-homebrew-mac/)]
+
+To install PHP via HomeBrew is quick and easy
 ---
 			$ brew tap homebrew/dupes
 			$ brew tap homebrew/versions
@@ -20,7 +24,7 @@ This set up is designed to work with PHP, Installing PHP via HomeBrew
 ---
 ### dnsmasq
 
-Dnsmasq provides network infrastructure for small networks.  It used within POMAM to create friendly URLs for project folders. i.e. http://threenine.dev
+**dnsmasq** provides network infrastructure for small networks.  It used within POMAMA to create friendly URLs for project folders. i.e. http://threenine.dev
 
 dnsmasq is installed via HomeBrew
 --
@@ -35,36 +39,23 @@ dnsmasq is installed via HomeBrew
 ---
 # Set Up
 
-Simply copy 3 files to your home directory :  create.sh, apache2 , home
+Simply copy 3 files to your home a.k.a root directory :  **create.sh, apache2 , home**
 
 Open a terminal window and execute
 ---
 		$ bash create.sh
 ---
 
-The shell will prompt for a directory name and your username (name of your home folder).
+The shell will prompt for a ** Directory name:** 
 
-The directory name can be anything you like, we recommend calling Sites.
+** Directory Name **   Can be anything you like, however we recommend calling **Sites**
 
-## Install PHPmyAdmin
 
-Installation of phpmyadmin is now included in the create.sh.  This is just left here for reference should it be required
----
-	$ curl -O https://files.phpmyadmin.net/phpMyAdmin/4.6.3/phpMyAdmin-4.6.3-all-languages.zip
-	$ unzip phpMyAdmin-4.6.3-all-languages.zip
-	$ mv phpMyAdmin-4.6.3-all-languages phpmyadmin
-	$ mv phpmyadmin ~/Sites/
-	$ rm phpMyAdmin-4.6.3-all-languages.zip
----
+You may be prompted to enter your Password for sudo access.  This is to copy the ammended apache2 configuration files over.
 
-Once script has finished restart apache
----
-	$ sudo apachectl -k restart
----
+Once create has completed simply navigate to http://localhost , your new Development Home Page will be visible in all it's glory. You are now ready to start creating new PHP projects
 
-Navigate to http://localhost , your new Development Home Page will be viewed.
-
-# Using
+# To create new PHP projects
 
 To create a new project simply navigate to your chosen directory i.e. Sites, and open the projects directory , create a new folder with the name of your new project i.e. fancynewproject
 
