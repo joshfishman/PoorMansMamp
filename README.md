@@ -79,4 +79,12 @@ Add your new php files ensuring you add a new index.php
 
 You can then just navigate in your browser to http://fancynewproject.dev  your new site will be displayed.
 
+# Contributions
+
+If you have a few ideas for the product and would like to contribute just let us know 
+
+If this project has helped you and you would like to share the love and buy us coffee you can [Donate via PayPal](https://www.paypal.me/geekiam) or buy something from our [Amazon Wish List](https://www.amazon.co.uk/registry/wishlist/3VBBD36KEPLO1?tag=threeninecons-21)
+
+
+
 
