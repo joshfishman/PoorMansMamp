@@ -8,7 +8,7 @@ Simple Homepage to manage the Poor Man's Mamp.
 
 If you would like to edit the links that are displayed  in the header to suit  your environment i.e. Link to your GitHub repository and project management portal.  All you need to do is edit the config file in **home/config/header.php**
 
----
+```php
 		    $topnav = array(
 			array( 'name' => 'Home', 'url' => 'http://localhost' , 'target' => '_self'),
 			array( 'name' => 'Github', 'url' => 'http://github.com/threenine' , 'target' => '_blank'),
@@ -16,4 +16,4 @@ If you would like to edit the links that are displayed  in the header to suit  y
 			array( 'name' => 'phpmyadmin', 'url' => 'http://localhost/phpmyadmin', 'target' => '_blank')
 		);
 
----
+```
