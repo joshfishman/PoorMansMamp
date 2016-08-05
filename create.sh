@@ -68,6 +68,13 @@ mv phpMyAdmin-4.6.3-all-languages phpmyadmin
 mv phpmyadmin ~/Sites/
 rm phpMyAdmin-4.6.3-all-languages.zip
 
+
+phpmyadminconfigsample="/Users/$username/$dirname/phpmyadmin/config.sample.inc.php"
+phpmyadminconfig="/Users/$username/$dirname/phpmyadmin/config.inc.php" 
+echo "Add Blow fish secret to phpmyadmin"
+echo "Add Blow fish secret to phpmyadmin"
+sed -e "s|cfg\['blowfish_secret'\] = '';|cfg['blowfish_secret'] = 'qtdRoGmbc9{8IZr323xYcSN]0s)r$9b_JUnb{~Xz';|g" $phpmyadminconfigsample  > $phpmyadminconfig
+
 echo "Restarting apache"
 sudo apachectl -k restart
 
