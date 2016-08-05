@@ -1,6 +1,17 @@
-### A Local Home Page for OSX Web Development
+[![Poor Man's MAMP Logo](https://threenine.co.uk/wp-content/uploads/2016/08/poormansmamp.png)](https://threenine.co.uk/setting-php7-development-mac-osx/)
 
-This is a small and simple local home page that automatically lists, and provide links to, your local sites. It's a companion project for a [blog post](http://mallinson.ca/post/osx-web-development) I wrote about setting up your Mac for web development.
+# POMAMA Administrtaion Portal
 
+Simple Homepage to manage the Poor Man's Mamp.
 
-* img/icon-gear.png from [Icons DB](http://www.iconsdb.com/black-icons/gear-2-icon.html)
+## Edit Portal Links
+
+If you would like to edit the links that are displayed  in the header to suit  your environment i.e. Link to your GitHub repository and project management portal.  All you need to do is edit the config file in **home/config/header.php**
+
+		$ $topnav = array(
+			array( 'name' => 'Home', 'url' => 'http://localhost' , 'target' => '_self'),
+			array( 'name' => 'Github', 'url' => 'http://github.com/threenine' , 'target' => '_blank'),
+			array( 'name' => 'Portal', 'url' => 'http://internal.threenine.co.uk/project/', 'target' => '_blank'),
+			array( 'name' => 'phpmyadmin', 'url' => 'http://localhost/phpmyadmin', 'target' => '_blank')
+		);
+
