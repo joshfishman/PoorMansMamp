@@ -11,19 +11,19 @@ This is supplemented by our post [Setting up PHP7 Development Evironment on MAC]
 
 ### PHP
 
-		This set up is designed to work with PHP, Installing PHP via HomeBrew
-
+This set up is designed to work with PHP, Installing PHP via HomeBrew
+---
 			$ brew tap homebrew/dupes
 			$ brew tap homebrew/versions
 			$ brew tap homebrew/homebrew-php
 			$ brew install php70
-
+---
 ### dnsmasq
 
-	Dnsmasq provides network infrastructure for small networks.  It used within POMAM to create friendly URLs for project folders. i.e. http://threenine.dev
+Dnsmasq provides network infrastructure for small networks.  It used within POMAM to create friendly URLs for project folders. i.e. http://threenine.dev
 
-	dnsmasq is installed via HomeBrew
-
+dnsmasq is installed via HomeBrew
+--
 		$ brew install dnsmasq
         $ cd $(brew --prefix)
         $ mkdir etc
@@ -32,14 +32,15 @@ This is supplemented by our post [Setting up PHP7 Development Evironment on MAC]
 		$ sudo launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
 		$ sudo mkdir /etc/resolver
 		$ sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/dev'
-
+---
 # Set Up
 
 Simply copy 3 files to your home directory :  create.sh, apache2 , home
 
 Open a terminal window and execute
-
+---
 		$ bash create.sh
+---
 
 The shell will prompt for a directory name and your username (name of your home folder).
 
@@ -48,18 +49,18 @@ The directory name can be anything you like, we recommend calling Sites.
 ## Install PHPmyAdmin
 
 Installation of phpmyadmin is now included in the create.sh.  This is just left here for reference should it be required
-
+---
 	$ curl -O https://files.phpmyadmin.net/phpMyAdmin/4.6.3/phpMyAdmin-4.6.3-all-languages.zip
 	$ unzip phpMyAdmin-4.6.3-all-languages.zip
 	$ mv phpMyAdmin-4.6.3-all-languages phpmyadmin
 	$ mv phpmyadmin ~/Sites/
 	$ rm phpMyAdmin-4.6.3-all-languages.zip
-
+---
 
 Once script has finished restart apache
-
+---
 	$ sudo apachectl -k restart
-
+---
 
 Navigate to http://localhost , your new Development Home Page will be viewed.
 
