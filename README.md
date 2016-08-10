@@ -21,6 +21,7 @@ To install PHP via HomeBrew is quick and easy
 			$ brew tap homebrew/versions
 			$ brew tap homebrew/homebrew-php
 			$ brew install php70
+			$ brew install php70-intl
 ```
 ### dnsmasq
 
