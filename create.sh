@@ -29,6 +29,24 @@ searchterm="%%ROOTFOLDER%%"
 
 replaceterm="/Users/$username/$dirname"
 
+echo "Check if Homebrew is installed if not install"
+
+which -s brew
+if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+else
+    brew update
+fi
+
+echo "Install PHP7"
+brew tap homebrew/dupes
+brew tap homebrew/versions
+brew tap homebrew/homebrew-php
+brew install php70
+brew install php70-intl
+
+echo "Install dnsmasq"
 brew install dnsmasq
 cd $(brew --prefix)
 mkdir etc

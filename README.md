@@ -15,7 +15,9 @@ Currnently POMAMA is configured to run only with PHP7 due in part that is what I
 
 Typically I install PHP on my mac using HomeBrew. If you don't currently use HomeBrew . Why?  [Install HomeBrew on Mac](http://garywoodfine.com/install-homebrew-mac/)
 
-To install PHP via HomeBrew is quick and easy
+The create script automatically install Homwbrew if it is not already installed and it will also install PHP 7
+
+To install PHP via HomeBrew is quick and easy. 
 ```shell
 			$ brew tap homebrew/dupes
 			$ brew tap homebrew/versions
@@ -26,6 +28,8 @@ To install PHP via HomeBrew is quick and easy
 ### dnsmasq
 
 **dnsmasq** provides network infrastructure for small networks.  It used within POMAMA to create friendly URLs for project folders. i.e. http://threenine.dev
+
+The create script will automatically install dnsmasq
 
 Install dnsmasq via HomeBrew and configure it
 
