@@ -1,5 +1,7 @@
 #!/bin/sh 
 
+
+
 read -p "Enter Directory Name: " dirname
 username=${PWD##*/}
 CWD="$(pwd)"
@@ -11,10 +13,12 @@ then
                 mkdir $dirname
                 cd $dirname
                 mkdir projects
+               
 
         else
                 cd dirname
                 mkdir projects
+                
         fi
 fi
 
@@ -25,7 +29,16 @@ searchterm="%%ROOTFOLDER%%"
 
 replaceterm="/Users/$username/$dirname"
 
+brew install dnsmasq
+cd $(brew --prefix)
+mkdir etc
+echo 'address=/.dev/127.0.0.1' > etc/dnsmasq.conf
+sudo cp -v $(brew --prefix dnsmasq)/homebrew.mxcl.dnsmasq.plist /Library/LaunchDaemons
+sudo launchctl load -w /Library/LaunchDaemons/homebrew.mxcl.dnsmasq.plist
+sudo mkdir /etc/resolver
+sudo bash -c 'echo "nameserver 127.0.0.1" > /etc/resolver/dev'
 
+cd $CWD
 
 i=0; 
 
